@@ -218,9 +218,11 @@ export const Container = styled.div`
 
   @media (max-width: 425px){
 
+    padding: 0rem 2rem 0rem 2rem;
+
     .logo {
     
-      padding: 2rem 5rem 40rem 2rem;
+      padding: 1.5rem 0rem 30rem 0rem;
       background: #EDEAEA;
 
     img {
@@ -235,12 +237,12 @@ export const Container = styled.div`
       justify-content: space-evenly;
       align-items: center;
 
-      margin-top: -40rem;
+      margin-top: -30rem;
 
     .estefane-img{
-      width: 25rem;
+      width: 20rem;
       height: auto;
-      margin: 0 2rem 0 0rem;
+      margin: 0 2rem 0 3rem;
 
       background: #E0BCB3;
  
@@ -273,6 +275,44 @@ export const Container = styled.div`
       }
     }
   }
-
 }
+  @media (max-width: 320px){
+
+    padding: 0;
+
+    .logo{
+      
+      img{
+      
+        width: 8rem;
+        height: auto;
+      }
+    }
+
+    .banner-content{
+    
+      .estefane-img{
+
+        width: 16rem;
+        height: auto;
+        margin-left: 2rem;
+      }
+
+
+
+     .text-banner{
+      width: 90%;
+
+      .title-banner{
+      h1{
+        font-size: 4rem;
+      }
+      img{
+        width: 10rem;
+      }
+     }
+     }
+    }
+
+  }
 `;
