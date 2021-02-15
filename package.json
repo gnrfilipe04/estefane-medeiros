@@ -1,5 +1,5 @@
 {
-  "name": "estefane-medeiros",
+  "name": "estefane",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "framer-motion": "^3.3.0",
     "next": "10.0.6",
+    "next-images": "^1.7.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
   }
 }
