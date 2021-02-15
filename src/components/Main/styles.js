@@ -308,20 +308,13 @@ export const Container = styled.div`
 
   @media (max-width: 768px){
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 5rem 5rem 5rem;
-    }
-
     .services {
 
       .div-exterior {
       display: flex;
       justify-content: flex-end;
       background: #c37f5e;
-      padding: 2rem 5rem 10rem 2rem;
+      padding: 2rem 2rem 10rem 2rem;
       margin-right: -1rem;
 
       .exterior {
@@ -352,7 +345,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: flex-start;
       background: #da9f82;
-      padding: 2rem 2rem 2rem 5rem;
+      padding: 2rem 2rem 2rem 2rem;
       margin-left: -1rem;
 
       .casal {
@@ -396,4 +389,28 @@ export const Container = styled.div`
     }
   } 
   }
+
+  .serie{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding: 0 5rem 0 0;
+  }
+
+  .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5rem 5rem 5rem;
+    }
+
+    @media (max-width: 425px){
+            
+      .contact {
+
+        .form{
+          width: 25rem;
+        }
+      }
+    }
 `;

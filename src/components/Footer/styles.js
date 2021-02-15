@@ -75,12 +75,47 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px){
-    
+
     .header-footer {
       display: flex;
       justify-content: space-evenly;
       align-items: flex-start;
       padding-bottom: 5rem;
     }
+
+    .logo {
+      width: 10rem;
+      height: auto;
+      margin: 0 10rem 0 0;
+      padding: 1rem 0 0 0;
+    }
+
+    .subscribe{
+      padding: 0rem;
+    }
+
+    .input-subscribe{
+
+      width: 20rem;
+    }
+    
+  }
+
+  @media (max-width: 425px){
+    
+    padding: 0 1rem 1rem 1rem;;
+
+    .logo {
+    width: 20rem;
+    height: auto;
+  }
+
+  .header-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0;
+  }
   }
 `;

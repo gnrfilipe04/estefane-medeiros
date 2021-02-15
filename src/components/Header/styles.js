@@ -208,9 +208,71 @@ export const Container = styled.div`
 
     .nav-social{
 
+      padding: 3.5rem 0 0 0;
+
       nav {
         display: none;
       }
     }
   }
+
+  @media (max-width: 425px){
+
+    .logo {
+    
+      padding: 2rem 5rem 40rem 2rem;
+      background: #EDEAEA;
+
+    img {
+      width: 12rem;
+      height: auto;
+      
+    }
+  }
+
+  .banner-content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      margin-top: -40rem;
+
+    .estefane-img{
+      width: 25rem;
+      height: auto;
+      margin: 0 2rem 0 0rem;
+
+      background: #E0BCB3;
+ 
+    }
+    
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 5.313rem;
+      color: #cf8d6d;
+
+      margin-top: -10rem;
+    }
+
+    .text-banner {
+      text-align: left;
+      
+
+      .linha{
+        width: 15rem;
+        height: auto;
+      }
+
+      p {
+        max-width: 30rem;
+        font-family: 'Louis George Café', sans-serif;
+        font-size: 1rem;
+
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+}
 `;
