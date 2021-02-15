@@ -73,7 +73,7 @@ const Main = () => {
       <div style={{ display: 'flex', justifyContent: 'flex-start'}}>
         <div className="detail-gray-1"></div> 
       </div>
-      <div style={{display: 'flex', justifyContent: 'center', padding: '20rem 10rem 20rem 10rem'}}>
+      <div style={{display: 'none', justifyContent: 'center', padding: '20rem 10rem 20rem 10rem'}}>
         <h1>INSTAGRAM</h1>
       </div>
       <div className='contact'>

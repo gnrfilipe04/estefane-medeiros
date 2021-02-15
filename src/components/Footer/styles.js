@@ -125,4 +125,31 @@ export const Container = styled.div`
       padding: 0 0 2rem 0;
     }
   }
+
+  @media (max-width: 320px){
+    
+    padding: 0 1rem 1rem 1rem;;
+
+    .header-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      .logo {
+        width: 15rem;
+        height: auto;
+        margin: 0;
+      }
+    }
+
+    .subscribe{
+      margin: -2rem 0 0 0;
+      padding: 0 0 2rem 0;
+    }
+
+    .input-subscribe{
+      width: 95vw;
+    }
+  }
 `;

@@ -298,8 +298,6 @@ export const Container = styled.div`
         margin-left: 2rem;
       }
 
-
-
      .text-banner{
       width: 90%;
 

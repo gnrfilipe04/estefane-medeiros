@@ -111,7 +111,7 @@ export const Container = styled.div`
 
   .section-sobre {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 5rem 18rem 0 18rem;
 
     .title-sobre {
@@ -183,7 +183,7 @@ export const Container = styled.div`
   .contact {
     display: flex;
     justify-content: space-between;
-    padding: 0 18rem 20rem 18rem;
+    padding: 5rem 18rem 5rem 18rem;
 
     .title-contact {
       display: block;
@@ -512,6 +512,24 @@ export const Container = styled.div`
 
   @media (max-width: 320px){
     
+    .serie {
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center ;
+      padding: 0 2rem 0 2rem;
+
+    h1{
+      font-size: 4rem;
+      
+    }
+    p {
+      font-size: 1.6rem;
+      
+    }
+  
+  }
     
 
     .frase{
@@ -538,7 +556,7 @@ export const Container = styled.div`
 }
 
 .section-sobre {
-    padding: 5rem 2rem 0 2rem;
+    padding: 0rem 2rem 0 2rem;
 
     h1 {
       font-size: 4rem;
