@@ -18,7 +18,7 @@ export default function handler(req, res) {
 
     const mailConfig = {
         from: 'flpfilipe19@gmail.com',
-        to: ['gnr_filipe@hotmail.com'],
+        to: ['gnr_filipe@hotmail.com', 'contato@estefanemedeiros.com'],
         replyTo: bodyData.email,
         subject: `Contato do ${bodyData.name} - ${bodyData.whatsapp} - ${bodyData.locality}`,
         text: bodyData.message,
