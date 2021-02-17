@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
                     <meta name="google-site-verification" content="H29sf9bbLHPqqlsjM1Q3LMz1yy8nONzqxIZ6J-3rtuk" />
                     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
                     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet" />
-                    <link href="http://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet"/>
+                    <link href="https://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet"/>
                     
 
                     {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NYBD2BTVE" /> */}
