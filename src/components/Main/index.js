@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { Container } from "./styles";
 import { withStyles } from "@material-ui/core/styles";
@@ -23,6 +23,32 @@ const CssTextField = withStyles({
 })(TextField);
 
 const Main = () => {
+
+  const [name , setName] = useState("")
+  const [email , setEmail] = useState("")
+  const [whatsapp , setWhatsapp] = useState("")
+  const [locality , setLocality] = useState("")
+  const [message , setMessage] = useState("")
+
+  const sendEmail = () => {
+    fetch('/api/sendEmail', {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        email,
+        whatsapp,
+        locality,
+        message
+      })
+    }).then(() => {
+      setName(""),
+      setEmail(""),
+      setWhatsapp(""),
+      setLocality(""),
+      setMessage("")
+    }).catch(console.error)
+  }
+
   return (
     <Container>
       <div className="frase">
@@ -128,24 +154,32 @@ const Main = () => {
             required
             id="standard-required"
             label="Nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             color="secondary"
           />
           <CssTextField
             required
             id="standard-required"
             label="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             style={{ margin: "1rem 0 0 0 " }}
           />
           <CssTextField
             required
             id="standard-required"
             label="Whatsapp"
+            value={whatsapp}
+            onChange={(e) => setWhatsapp(e.target.value)}
             style={{ margin: "1rem 0 0 0 " }}
           />
           <CssTextField
             required
             id="standard-required"
             label="Localidade"
+            value={locality}
+            onChange={(e) => setLocality(e.target.value)}
             style={{ margin: "1rem 0 0 0 " }}
           />
           <CssTextField
@@ -153,6 +187,8 @@ const Main = () => {
             label="Como posso ajudar?"
             multiline
             rows={4}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             variant="outlined"
             style={{ margin: "1rem 0 0 0 " }}
           />
