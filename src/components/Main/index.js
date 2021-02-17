@@ -192,7 +192,7 @@ const Main = () => {
             variant="outlined"
             style={{ margin: "1rem 0 0 0 " }}
           />
-          <button type="submit">Enviar</button>
+          <button type="submit" onClick={sendEmail}>Enviar</button>
         </div>
       </div>
     </Container>
