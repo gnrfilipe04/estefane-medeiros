@@ -64,6 +64,9 @@ const Header = () => {
           </p>
         </div>
       </div>
+      <Link href="https://api.whatsapp.com/send?phone=5551998196249&text=Ol%C3%A1%20sou%20a%20Psic%C3%B3loga%20Estefane%20Medeiros%2C%20como%20posso%20te%20ajudar%3F">
+      <a target="_blank"><img src="whatsapp.svg" style={{ width: '5rem', height: 'auto', position: 'fixed', bottom: '2rem', right: '5rem'}}/></a>
+      </Link>
     </Container>
   );
 };

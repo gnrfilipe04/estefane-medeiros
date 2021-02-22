@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { withStyles } from "@material-ui/core/styles";
 import { Container } from "./styles";
@@ -30,6 +30,22 @@ const CssTextField = withStyles({
 })(TextField);
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const sendEmail = () => {
+    fetch("/api/sendEmail", {
+      method: "POST",
+      body: JSON.stringify({ 
+        email,
+
+      }),
+    })
+      .then(() => {
+          setEmail("")  
+      })
+      .catch(console.error);
+  };
+
   return (
     <Container>
       <div className="header-footer">
@@ -52,9 +68,11 @@ const Footer = () => {
               size="small"
               fullWidth
               variant="outlined"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               id="custom-css-outlined-input"
             />
-            <button type="submit">ok</button>
+            <button type="submit" onClick={sendEmail}>ok</button>
           </div>
         </div>
       </div>
