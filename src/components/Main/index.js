@@ -23,31 +23,32 @@ const CssTextField = withStyles({
 })(TextField);
 
 const Main = () => {
-
-  const [name , setName] = useState("")
-  const [email , setEmail] = useState("")
-  const [whatsapp , setWhatsapp] = useState("")
-  const [locality , setLocality] = useState("")
-  const [message , setMessage] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [locality, setLocality] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = () => {
-    fetch('/api/sendEmail', {
+    fetch("/api/sendEmail", {
       method: "POST",
       body: JSON.stringify({
         name,
         email,
         whatsapp,
         locality,
-        message
+        message,
+      }),
+    })
+      .then(() => {
+        setName(""),
+          setEmail(""),
+          setWhatsapp(""),
+          setLocality(""),
+          setMessage("");
       })
-    }).then(() => {
-      setName(""),
-      setEmail(""),
-      setWhatsapp(""),
-      setLocality(""),
-      setMessage("")
-    }).catch(console.error)
-  }
+      .catch(console.error);
+  };
 
   return (
     <Container>
@@ -113,13 +114,15 @@ const Main = () => {
           <h1>Sobre mim</h1>
           <img className="linha" src="linha-grossa.png" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            venenatis pulvinar lectus, tristique accumsan mi facilisis eu.
-            Nullam quam elit, feugiat fermentum nibh id, accumsan dignissim
-            risus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            venenatis pulvinar lectus, tristique accumsan mi facilisis eu.
-            Nullam quam elit, feugiat fermentum nibh id, accumsan dignissim
-            risus.
+            Estefane Monique Medeiros da Silva - CRP n°07/30749
+            <br />
+            Psicóloga Clínica, formada pelo Centro Universitário Unicnec,
+            utilizo como ênfase nos atendimentos a abordagem
+            Cognitiva-Comportamental (TCC), incluindo também a Terapia do
+            Esquema. Pós-graduada em Psicologia Jurídica e Avaliação
+            Psicológica, busco proporcionar aos pacientes um acolhimento livre
+            de preconceitos, utilizando técnicas e teorias comprovadas
+            cientificamente.
           </p>
         </div>
       </div>
@@ -192,7 +195,9 @@ const Main = () => {
             variant="outlined"
             style={{ margin: "1rem 0 0 0 " }}
           />
-          <button type="submit" onClick={sendEmail}>Enviar</button>
+          <button type="submit" onClick={sendEmail}>
+            Enviar
+          </button>
         </div>
       </div>
     </Container>

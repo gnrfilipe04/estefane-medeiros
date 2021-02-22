@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from 'next/link'
 import { Container } from "./styles";
 
 const Header = () => {
@@ -27,9 +27,15 @@ const Header = () => {
             </ul>
           </nav>
           <div className="social-icons">
-            <img src="facebook.svg" />
-            <img src="instagram.svg" />
-            <img src="linkedin.svg" />
+            <Link href="https://www.facebook.com/estefanemedeiross">
+              <a target="_blank"><img src="facebook.svg" /></a>
+            </Link>
+            <Link href="https://www.instagram.com/estefanemedeiross/">
+              <a target="_blank"><img src="instagram.svg" /></a>
+            </Link>
+            <Link href="https://www.linkedin.com/in/estefane-medeiros-2518531ab/">
+              <a target="_blank"><img src="linkedin.svg" /></a>
+            </Link>
           </div>
         </div>
       </div>
@@ -41,10 +47,10 @@ const Header = () => {
             <img className="linha" src="linha-grossa.png" />
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            venenatis pulvinar lectus, tristique accumsan mi facilisis eu.
-            Nullam quam elit, feugiat fermentum nibh id, accumsan dignissim
-            risus.
+            Eu sou a Estefane Medeiros, sou Psicologa, adepta da Terapia
+            Cognitiva-Comportamental. Auxilio pessoas do mundo todo a lidarem
+            com suas questões psicologicas, desenvolvendo maior
+            autoresponsabilidade.
           </p>
         </div>
       </div>

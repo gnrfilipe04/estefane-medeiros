@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { Container } from "./styles";
 import Coffe from "@material-ui/icons/FreeBreakfastOutlined";
 import Heart from "@material-ui/icons/FavoriteBorderOutlined";
+import Link from 'next/link'
 
 const CssTextField = withStyles({
   root: {
@@ -35,9 +36,15 @@ const Footer = () => {
         <img src="logo-header.svg" className="logo" />
         <div className="subscribe">
           <div className="social-icons">
-            <img src="facebook.svg" />
-            <img src="instagram.svg" />
-            <img src="linkedin.svg" />
+          <Link href="https://www.facebook.com/estefanemedeiross">
+              <a target="_blank"><img src="facebook.svg" /></a>
+            </Link>
+            <Link href="https://www.instagram.com/estefanemedeiross/">
+              <a target="_blank"><img src="instagram.svg" /></a>
+            </Link>
+            <Link href="https://www.linkedin.com/in/estefane-medeiros-2518531ab/">
+              <a target="_blank"><img src="linkedin.svg" /></a>
+            </Link>
           </div>
           <div className="input-subscribe">
             <CssTextField
