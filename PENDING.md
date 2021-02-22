@@ -11,3 +11,5 @@
 ## logo eFive footer
 
 ## Redirecionar dominio
+
+## remover imagens do public

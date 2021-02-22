@@ -28,6 +28,8 @@ export const Container = styled.div`
     a {
       padding: 0.7rem;
       font-family: "Louis George Café", sans-serif;
+      text-decoration: none;
+      color: black;
     }
   }
 

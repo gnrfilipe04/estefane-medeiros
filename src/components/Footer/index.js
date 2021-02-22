@@ -34,7 +34,7 @@ const Footer = () => {
     <Container>
       <div className="header-footer">
         <img src="logo-header.svg" className="logo" />
-        <div className="subscribe">
+        <div className="subscribe" id="contato">
           <div className="social-icons">
           <Link href="https://www.facebook.com/estefanemedeiross">
               <a target="_blank"><img src="facebook.svg" /></a>

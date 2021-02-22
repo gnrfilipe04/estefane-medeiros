@@ -109,7 +109,7 @@ const Main = () => {
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
         <div className="detail-gray-1"></div>
       </div>
-      <div className="section-sobre">
+      <div className="section-sobre" id='sobre'>
         <div className="title-sobre">
           <h1>Sobre mim</h1>
           <img className="linha" src="linha-grossa.png" />
@@ -126,7 +126,7 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="serie">
+      <div className="serie" id="exterior">
         <h1>Conheça a série:</h1>
         <p>Brasileiros no exterior</p>
         <button>Conhecer</button>

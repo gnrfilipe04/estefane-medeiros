@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Louis George Café', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body  {
     overflow-x: hidden;
     position: relative;
