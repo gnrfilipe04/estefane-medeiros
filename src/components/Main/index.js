@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { Container } from "./styles";
 import { withStyles } from "@material-ui/core/styles";
+import Link from 'next/link'
+import Button from '@material-ui/core/Button';
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
 
 const CssTextField = withStyles({
   root: {
@@ -28,6 +35,21 @@ const Main = () => {
   const [whatsapp, setWhatsapp] = useState("");
   const [locality, setLocality] = useState("");
   const [message, setMessage] = useState("");
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleSendEmail = () => {
+    sendEmail();
+    setOpen(false);
+  };
 
   const sendEmail = () => {
     fetch("/api/sendEmail", {
@@ -109,7 +131,7 @@ const Main = () => {
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
         <div className="detail-gray-1"></div>
       </div>
-      <div className="section-sobre" id='sobre'>
+      <div className="section-sobre" id="sobre">
         <div className="title-sobre">
           <h1>Sobre mim</h1>
           <img className="linha" src="linha-grossa.png" />
@@ -127,9 +149,11 @@ const Main = () => {
         </div>
       </div>
       <div className="serie" id="exterior">
-        <h1>Conheça a série:</h1>
+        <h1>Conheça o e-book:</h1>
         <p>Brasileiros no exterior</p>
-        <button>Conhecer</button>
+        <button variant="outlined" color="primary" onClick={handleClickOpen}>
+          Conhecer
+        </button>
       </div>
       <div style={{ display: "flex", justifyContent: "flex-start" }}>
         <div className="detail-gray-1"></div>
@@ -159,7 +183,6 @@ const Main = () => {
             label="Nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            color="secondary"
           />
           <CssTextField
             required
@@ -200,6 +223,36 @@ const Main = () => {
           </button>
         </div>
       </div>
+
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="form-dialog-title"
+      >
+        <DialogTitle id="form-dialog-title">E-book</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Basta preencher seu email para ter acesso ao e-book feito com todo carinho para você que vive no exterior
+          </DialogContentText>
+          <CssTextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Email"
+            type="email"
+            fullWidth
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="default">
+            Cancelar
+          </Button>
+          <Button onClick={handleSendEmail} color="default">
+            Enviar
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Container>
   );
 };

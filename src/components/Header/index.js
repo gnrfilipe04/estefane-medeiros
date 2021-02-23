@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { Container } from "./styles";
 
 const Header = () => {
@@ -16,10 +16,9 @@ const Header = () => {
                 <Link href="#inicio">
                   <a>Início</a>
                 </Link>
-                
               </li>
               <li>
-                <Link href='#sobre'>
+                <Link href="#sobre">
                   <a>Sobre</a>
                 </Link>
               </li>
@@ -32,19 +31,24 @@ const Header = () => {
                 <Link href="#contato">
                   <a>Contato</a>
                 </Link>
-                
               </li>
             </ul>
           </nav>
           <div className="social-icons">
             <Link href="https://www.facebook.com/estefanemedeiross">
-              <a target="_blank"><img src="facebook.svg" /></a>
+              <a target="_blank">
+                <img src="facebook.svg" />
+              </a>
             </Link>
             <Link href="https://www.instagram.com/estefanemedeiross/">
-              <a target="_blank"><img src="instagram.svg" /></a>
+              <a target="_blank">
+                <img src="instagram.svg" />
+              </a>
             </Link>
             <Link href="https://www.linkedin.com/in/estefane-medeiros-2518531ab/">
-              <a target="_blank"><img src="linkedin.svg" /></a>
+              <a target="_blank">
+                <img src="linkedin.svg" />
+              </a>
             </Link>
           </div>
         </div>
@@ -64,9 +68,15 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <Link href="https://api.whatsapp.com/send?phone=5551998196249&text=Ol%C3%A1%20sou%20a%20Psic%C3%B3loga%20Estefane%20Medeiros%2C%20como%20posso%20te%20ajudar%3F">
-      <a target="_blank"><img src="whatsapp.svg" style={{ width: '5rem', height: 'auto', position: 'fixed', bottom: '2rem', right: '5rem'}}/></a>
-      </Link>
+      <div className="button-whats">
+        <Link href="https://api.whatsapp.com/send?phone=5551998196249&text=Ol%C3%A1%20sou%20a%20Psic%C3%B3loga%20Estefane%20Medeiros%2C%20como%20posso%20te%20ajudar%3F">
+          <a target="_blank">
+            <img
+              src="whatsapp.svg"
+            />
+          </a>
+        </Link>
+      </div>
     </Container>
   );
 };

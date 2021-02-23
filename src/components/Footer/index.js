@@ -36,8 +36,7 @@ const Footer = () => {
     fetch("/api/sendEmail", {
       method: "POST",
       body: JSON.stringify({ 
-        email,
-
+        email
       }),
     })
       .then(() => {
@@ -79,8 +78,10 @@ const Footer = () => {
       <div class="footer-efive">
         <h3>
           Feito com <Heart fontSize="small" style={{ marginBottom: "-6px" }} />{" "}
-          e <Coffe fontSize="small" style={{ marginBottom: "-6px" }} /> por -
-          eFive
+          e <Coffe fontSize="small" style={{ marginBottom: "-6px" }} /> por
+          <Link href='#'>
+          <a><img src="logo.png" style={{ width: '5rem', height: 'auto', marginLeft: '1rem'}}/></a>
+          </Link>
         </h3>
       </div>
     </Container>

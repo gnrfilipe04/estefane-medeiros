@@ -96,6 +96,14 @@ export const Container = styled.div`
     }
   }
 
+  .button-whats img {
+    width: 5rem;
+    height: auto;
+    position: fixed;
+    bottom: 2rem;
+    right: 5rem;
+  }
+
   @media (max-width: 1320px) {
     .nav-social {
       nav {
@@ -247,6 +255,14 @@ export const Container = styled.div`
           line-height: 1.5rem;
         }
       }
+    }
+
+    .button-whats img {
+      width: 3rem;
+      height: auto;
+      position: fixed;
+      bottom: 2rem;
+      right: 1rem;
     }
   }
   @media (max-width: 320px) {
