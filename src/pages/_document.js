@@ -46,20 +46,19 @@ export default class MyDocument extends Document {
                     <link href="https://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet"/>
                     
 
-                    {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NYBD2BTVE" /> */}
-                    {/* <script
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173602044-1" />
+                    <script
                         dangerouslySetInnerHTML={{
                         __html: `
-                                window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments)}
-                                gtag('js', new Date());
-
-                                gtag('config', 'G-0NYBD2BTVE');`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+    
+                        gtag('config', 'UA-173602044-1');`
                         }}
-                    /> */}
+                    />
 
-
-                    <title>Estefane Medeiros | Psicóloga</title>
+                  <title>Estefane Medeiros | Psicóloga</title>
 
                 </Head>
                 <body>
