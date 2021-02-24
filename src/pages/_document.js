@@ -58,6 +58,18 @@ export default class MyDocument extends Document {
                         }}
                     />
 
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-614704650" />
+                    <script
+                        dangerouslySetInnerHTML={{
+                        __html: `
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+
+                                gtag('config', 'AW-614704650');`
+                        }}
+                    />
+
                   <title>Estefane Medeiros | Psicóloga</title>
 
                 </Head>
