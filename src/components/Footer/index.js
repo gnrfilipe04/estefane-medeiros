@@ -71,7 +71,7 @@ const Footer = () => {
               onChange={(e) => setEmail(e.target.value)}
               id="custom-css-outlined-input"
             />
-            <button type="submit" onClick={sendEmail}>ok</button>
+            <button type="submit" onClick={sendEmail} style={{outline: 'none', cursor: 'pointer'}}>ok</button>
           </div>
         </div>
       </div>

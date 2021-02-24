@@ -151,7 +151,7 @@ const Main = () => {
       <div className="serie" id="exterior">
         <h1>Conheça o e-book:</h1>
         <p>Brasileiros no exterior</p>
-        <button variant="outlined" color="primary" onClick={handleClickOpen}>
+        <button variant="outlined" color="primary" onClick={handleClickOpen} style={{outline: 'none', cursor: 'pointer'}}>
           Conhecer
         </button>
       </div>
@@ -218,7 +218,7 @@ const Main = () => {
             variant="outlined"
             style={{ margin: "1rem 0 0 0 " }}
           />
-          <button type="submit" onClick={sendEmail}>
+          <button type="submit" onClick={sendEmail} style={{outline: 'none', cursor: 'pointer'}}>
             Enviar
           </button>
         </div>

@@ -19,4 +19,8 @@ body  {
     overflow-x: hidden;
     position: relative;
 }
+
+button {
+    cursor: pointer;
+}
 `
