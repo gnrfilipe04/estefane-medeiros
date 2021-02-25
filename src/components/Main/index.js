@@ -87,13 +87,14 @@ const Main = () => {
             <img className="icon-exterior" src="icones-01.svg" />
             <h1>Brasileiros no exterior</h1>
             <p>
-              Os relacionamentos são cercados de desafios ao longo de sua
-              história, duas pessoas com suas bagagens emocionais, em busca de
-              um caminho para seguir em conjunto. Porém, apesar dos laços
-              afetivos que envolvem o casal, nem sempre isto basta para que
-              consigam manter um relacionamento saudável. Por isso, a terapia de
-              casal tem um papel importante nesta área, auxiliando o casal ao
-              autoconhecimento, buscando alinharem seus caminhos.
+              Toda mudança gera desconforto, mudar de país não seria diferente.
+              Quando deixamos, por mais que seja por vontade própria, o lugar que
+              consideramos até então nosso lar, nosso cérebro e sentimentos tendem 
+              a nos sabotar em um processo de adaptação em um novo lugar. A psicologia 
+              por sua vez, auxilia cada vez mais imigrantes a lidarem com esta demanda,
+              e então assim conseguirem viver com mais tranquilidade no país em que escolheram
+              chamar de lar.
+
             </p>
           </div>
         </div>
@@ -115,7 +116,7 @@ const Main = () => {
         <div className="div-casal">
           <div className="casal">
             <img className="icon-casal" src="icones-03.svg" />
-            <h1>Brasileiros no exterior</h1>
+            <h1>Terapia de casal</h1>
             <p>
               Os relacionamentos são cercados de desafios ao longo de sua
               história, duas pessoas com suas bagagens emocionais, em busca de
@@ -148,7 +149,7 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="serie" id="exterior">
+      <div className="serie" id="exterior"> 
         <h1>Conheça o e-book:</h1>
         <p>Brasileiros no exterior</p>
         <button variant="outlined" color="primary" onClick={handleClickOpen} style={{outline: 'none', cursor: 'pointer'}}>
