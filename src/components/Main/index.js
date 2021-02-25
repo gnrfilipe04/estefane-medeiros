@@ -103,13 +103,10 @@ const Main = () => {
             <img className="icon-individual" src="icones-02.svg" />
             <h1>Psicoterapia individual</h1>
             <p>
-              Os relacionamentos são cercados de desafios ao longo de sua
-              história, duas pessoas com suas bagagens emocionais, em busca de
-              um caminho para seguir em conjunto. Porém, apesar dos laços
-              afetivos que envolvem o casal, nem sempre isto basta para que
-              consigam manter um relacionamento saudável. Por isso, a terapia de
-              casal tem um papel importante nesta área, auxiliando o casal ao
-              autoconhecimento, buscando alinharem seus caminhos.
+              O comportamento humano por muitas vezes pode nos instigar a entende-lo,
+              tamanha a sua complexidade. A psicologia por sua vez trabalha nos auxiliando
+              a entender determinado comportamento, de onde veio, e então elaborando técnicas
+              para ressignificação de tal e assim contribuindo para uma melhor qualidade de vida. 
             </p>
           </div>
         </div>
